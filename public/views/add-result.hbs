@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <a href="./">Back to index Page</a>
+    <table class="table-fixed">
+  <thead>
+    <tr>
+      <th>Customer Number</th>
+      <th>Customer Name</th>
+      <th>Contact LastName</th>
+      <th>Contact FirstName</th>
+      <th>Phone Number</th>
+      <th>Address Line1</th>
+      <th>Address Line2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal Code</th>
+      <th>Country</th>
+      <th>Sales Rep Employee Number</th>
+      <th>Credit Limit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      {{#data}}
+    <tr>
+      <td>{{customerNumber}}</td>
+      <td>{{customerName}}</td>
+      <td>{{contactLastName}}</td>
+      <td>{{contactFirstName}}</td>
+      <td>{{phoneNumber}}</td>
+      <td>{{addressLine1}}</td>
+      <td>{{addressLine2}}</td>
+      <td>{{city}}</td>
+      <td>{{state}}</td>
+      <td>{{postalCode}}</td>
+      <td>{{country}}</td>
+      <td>{{salesRepEmployeeNumber}}</td>
+      <td>{{creditLimit}}</td>
+    </tr>
+   {{/data}}
+  </tbody>
+</table>
+</body>
+</html>
